@@ -8,7 +8,7 @@ interface Props {
 
 const {
   title = 'Premier Paws Pet Care | Professional Pet Care Services',
-  description = 'Premier Paws Pet Care provides professional, loving pet care services. Dog walking, pet sitting, overnight stays, and more. Insured, bonded, and background-checked.',
+  description = 'Premier Paws Pet Care provides professional, loving pet care services, licensed veterinary technician services, dog walking, education, and more.',
 } = Astro.props;
 ---
 
@@ -26,6 +26,7 @@ const {
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <slot name="head" />
   </head>
   <body class="antialiased bg-white text-black">
     <slot />
