@@ -92,7 +92,7 @@
       {
         "name": "Feed Visit",
         "description": "We stop by to fill food and water bowls, check on your pet's well-being, and send you a quick update.",
-        "iconId": "circle-stack"
+        "iconId": "paper-bag"
       },
       {
         "name": "Cat Visit",
