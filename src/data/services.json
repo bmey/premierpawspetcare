@@ -1,38 +1,104 @@
 [
   {
-    "id": "dog-walking",
-    "title": "Dog Walking",
-    "description": "Daily walks tailored to your dog's energy and needs. Choose from 20, 30, or 60-minute options with real-time GPS tracking and a post-walk report sent to your phone.",
-    "icon": "walk"
+    "id": "medical-care",
+    "category": "Medical Care & Client Education",
+    "tagline": "Where our vet tech expertise sets us apart",
+    "description": "With a licensed veterinary technician on our team, we provide skilled medical and wellness services that go far beyond what a typical pet sitter can offer. From routine maintenance to post-surgical monitoring, your pet is in highly trained hands.",
+    "theme": "medical",
+    "services": [
+      {
+        "name": "SubQ Fluids & Injection Administration",
+        "description": "Skilled subcutaneous fluid therapy or injection administration for pets requiring ongoing at-home treatment.",
+        "iconId": "beaker"
+      },
+      {
+        "name": "Educational Visits",
+        "description": "Personalized guidance sessions covering puppy training support, anxious pet management, senior care, rabbit behavior, restraint techniques, and more.",
+        "iconId": "academic-cap"
+      },
+      {
+        "name": "Vet Visit Liaison",
+        "description": "We attend veterinary appointments on your behalf, advocate for your pet, take detailed notes, and relay everything clearly back to you.",
+        "iconId": "clipboard"
+      },
+      {
+        "name": "Quality of Life Consultation",
+        "description": "A compassionate, honest assessment of your pet's comfort, mobility, and happiness — especially valuable for senior or seriously ill pets.",
+        "iconId": "heart"
+      },
+      {
+        "name": "Oral Medication Administration",
+        "description": "Reliable, low-stress administration of pills, liquids, or capsules on your veterinarian's prescribed schedule.",
+        "iconId": "plus-circle"
+      },
+      {
+        "name": "Nail Trim & Ear Cleaning",
+        "description": "Safe, stress-minimized nail trims and gentle external ear canal cleaning using proper veterinary techniques and solutions. Difficult pets accommodated.",
+        "iconId": "scissors"
+      }
+    ]
   },
   {
-    "id": "pet-sitting",
-    "title": "Pet Sitting",
-    "description": "In-home pet sitting so your pet stays comfortable in their own environment. We provide feeding, fresh water, playtime, and plenty of love.",
-    "icon": "home"
+    "id": "premium-care",
+    "category": "Premium Care",
+    "tagline": "Enhanced & specialty services",
+    "description": "These services go well beyond routine care — requiring more time, specialized skill, or hands-on effort. Ideal for pet owners who want the very best experience for their animals.",
+    "theme": "premium",
+    "services": [
+      {
+        "name": "Dog Walking (15 min)",
+        "description": "A brisk, focused walk for exercise and a bathroom break. GPS tracked with a post-visit report sent to your phone.",
+        "iconId": "map-pin"
+      },
+      {
+        "name": "Dog Field Trips",
+        "description": "Supervised outings to parks, trails, or pet-friendly destinations for enrichment, socialization, and adventure beyond the backyard.",
+        "iconId": "map"
+      },
+      {
+        "name": "Extra Playtime & Enrichment",
+        "description": "Dedicated play, mental stimulation, and engagement — puzzle toys, fetch, cuddle time, whatever your pet loves most.",
+        "iconId": "face-smile"
+      },
+      {
+        "name": "Rabbit/Exotics Visit",
+        "description": "Hay refresh, food and water top-off, litter cleaning, and gentle handling and enrichment for your small or exotic companion.",
+        "iconId": "sparkles"
+      },
+      {
+        "name": "Cage Cleaning",
+        "description": "Thorough cleaning and sanitizing of small animal enclosures, bird cages, and multi-level habitat setups with fresh bedding and supplies.",
+        "iconId": "home"
+      },
+      {
+        "name": "Poop Scoop Yard",
+        "description": "Complete yard waste removal — we bag and properly dispose of everything so you come home to a clean, safe outdoor space.",
+        "iconId": "trash"
+      }
+    ]
   },
   {
-    "id": "puppy-care",
-    "title": "Puppy Care",
-    "description": "Specialized care for puppies including extra potty breaks, socialization, and positive reinforcement to support healthy development during the critical early months.",
-    "icon": "star"
-  },
-  {
-    "id": "overnight-stays",
-    "title": "Overnight Stays",
-    "description": "We stay in your home overnight so your pet never has to sleep alone. Perfect for vacations, business travel, or late nights out.",
-    "icon": "moon"
-  },
-  {
-    "id": "drop-in-visits",
-    "title": "Drop-In Visits",
-    "description": "Quick 20-minute check-ins to feed, refresh water, give potty breaks, and provide a little midday love and attention while you're away.",
-    "icon": "clock"
-  },
-  {
-    "id": "cat-care",
-    "title": "Cat Care",
-    "description": "Dedicated care for your feline friends. We scoop litter, refill food and water, and spend quality playtime keeping your cat happy and stimulated.",
-    "icon": "cat"
+    "id": "basic-care",
+    "category": "Basic Care",
+    "tagline": "Everyday needs, reliably handled",
+    "description": "Your essential, routine pet care needs — handled with the same professionalism, attention, and love as everything else we do. Consistent, dependable, and always on time.",
+    "theme": "basic",
+    "services": [
+      {
+        "name": "Potty Break",
+        "description": "A quick, dedicated visit to let your dog out for a bathroom break — without a full walk. Great for busy weekdays.",
+        "iconId": "clock"
+      },
+      {
+        "name": "Feed Visit",
+        "description": "We stop by to fill food and water bowls, check on your pet's well-being, and send you a quick update.",
+        "iconId": "circle-stack"
+      },
+      {
+        "name": "Cat Visit",
+        "description": "Complete feline care — fresh food, clean water, litter box service, and quality social time to keep your cat happy.",
+        "iconId": "heart"
+      }
+    ]
   }
 ]
