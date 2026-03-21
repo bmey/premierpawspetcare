@@ -3,7 +3,7 @@
     "id": "medical-care",
     "category": "Medical Care & Client Education",
     "tagline": "Where our vet tech expertise sets us apart",
-    "description": "With a licensed veterinary technician on our team, we provide skilled medical and wellness services that go far beyond what a typical pet sitter can offer. From routine maintenance to post-surgical monitoring, your pet is in highly trained hands.",
+    "description": "With a licensed veterinary technician on our team, we provide services that go far beyond what a typical pet sitter can offer. Your pet is in highly trained hands.",
     "theme": "medical",
     "services": [
       {
@@ -42,7 +42,7 @@
     "id": "premium-care",
     "category": "Premium Care",
     "tagline": "Enhanced & specialty services",
-    "description": "These services go well beyond routine care — requiring more time, specialized skill, or hands-on effort. Ideal for pet owners who want the very best experience for their animals.",
+    "description": "Ideal for pet owners who want the very best experience for their animals. These services require more time, specialized skill, or hands-on effort.",
     "theme": "premium",
     "services": [
       {
