@@ -74,7 +74,7 @@ const themeStyles: Record<string, { header: string; badge: string; iconColor: st
             <div class={`${theme.header} px-8 py-6`}>
               <div class="flex flex-wrap items-start justify-between gap-x-4 gap-y-2 mb-2">
                 <h3 class="text-2xl font-black tracking-tight">{category.category}</h3>
-                <div class={`inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full flex-shrink-0 ${theme.badge}`}>
+                <div class={`inline-flex items-center gap-2 text-[10px] sm:text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full flex-shrink-0 ${theme.badge}`}>
                   <Fragment set:html={categoryIcons[category.theme]} />
                   {category.tagline}
                 </div>
