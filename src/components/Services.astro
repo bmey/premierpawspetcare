@@ -67,14 +67,14 @@ const themeStyles: Record<string, { header: string; badge: string; iconColor: st
 
             <!-- Category header -->
             <div class={`${theme.header} px-8 py-6`}>
-              <div class="flex flex-col sm:flex-row sm:items-center gap-3 mb-2">
-                <div class={`inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full w-fit ${theme.badge}`}>
+              <div class="flex flex-wrap items-start justify-between gap-x-4 gap-y-2 mb-2">
+                <h3 class="text-2xl font-black tracking-tight">{category.category}</h3>
+                <div class={`inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full flex-shrink-0 ${theme.badge}`}>
                   <Fragment set:html={categoryIcons[category.theme]} />
                   {category.tagline}
                 </div>
               </div>
-              <h3 class="text-2xl font-black tracking-tight mb-1">{category.category}</h3>
-              <p class="opacity-75 text-sm leading-relaxed max-w-2xl">{category.description}</p>
+              <p class="opacity-60 text-xs leading-relaxed">{category.description}</p>
             </div>
 
             <!-- Services grid -->
@@ -105,7 +105,7 @@ const themeStyles: Record<string, { header: string; badge: string; iconColor: st
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
       </svg>
       <p class="text-violet-700 text-xs leading-relaxed">
-        <strong>Disclaimer:</strong> Licensed veterinary technicians are not able to diagnose, perform surgery, or give prognosis. All medical services are performed under the guidance of your pet's licensed veterinarian.
+        <strong>Disclaimer:</strong> Licensed veterinary technicians are not able to diagnose, perform surgery, or give prognosis.
       </p>
     </div>
 
