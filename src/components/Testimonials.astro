@@ -1,0 +1,50 @@
+---
+import testimonials from '../data/testimonials.json';
+---
+
+<section id="testimonials" class="bg-violet-50 py-20 lg:py-28 overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <p class="text-violet-600 font-semibold text-sm uppercase tracking-widest mb-3">Reviews</p>
+      <h2 class="text-4xl lg:text-5xl font-black text-black tracking-tight mb-4">Happy Pets, Happy Families</h2>
+      <div class="flex items-center justify-center gap-1 mb-2">
+        {Array.from({length: 5}).map(() => (
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        ))}
+      </div>
+      <p class="text-gray-500 text-sm">Trusted by families across the area</p>
+    </div>
+  </div>
+
+  <!-- Full-bleed horizontal scroll container -->
+  <div class="overflow-x-auto scrollbar-hide pb-4">
+    <div
+      class="flex gap-5 px-6"
+      style={`padding-left: max(1.5rem, calc((100vw - 72rem) / 2 + 1.5rem))`}
+    >
+      {testimonials.map((t) => (
+        <article class="bg-white rounded-2xl p-7 shadow-sm border border-violet-100 w-80 flex-shrink-0 flex flex-col gap-4">
+          <!-- Stars -->
+          <div class="flex gap-0.5">
+            {Array.from({length: t.rating}).map(() => (
+              <svg class="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            ))}
+          </div>
+          <!-- Quote -->
+          <p class="text-gray-600 text-sm leading-relaxed flex-1">"{t.text}"</p>
+          <!-- Author -->
+          <div class="border-t border-gray-100 pt-4">
+            <p class="font-semibold text-black text-sm">{t.name}</p>
+            <p class="text-violet-500 text-xs mt-0.5">{t.pet}</p>
+          </div>
+        </article>
+      ))}
+      <!-- Trailing padding spacer -->
+      <div class="w-6 flex-shrink-0"></div>
+    </div>
+  </div>
+</section>

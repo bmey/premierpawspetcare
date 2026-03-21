@@ -1,0 +1,56 @@
+---
+// Update this list with the actual neighborhoods and cities you serve
+const neighborhoods = [
+  "Downtown",
+  "Midtown",
+  "North Side",
+  "South Side",
+  "East End",
+  "West Village",
+  "Riverside",
+  "Oak Park",
+  "Lakewood",
+  "Hillcrest",
+];
+---
+
+<section id="service-area" class="bg-white py-20 lg:py-28">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Left text -->
+      <div>
+        <p class="text-violet-600 font-semibold text-sm uppercase tracking-widest mb-3">Service Area</p>
+        <h2 class="text-4xl lg:text-5xl font-black text-black tracking-tight leading-[1.1] mb-6">
+          Serving Your<br/><span class="text-violet-600">Neighborhood.</span>
+        </h2>
+        <p class="text-gray-500 text-lg leading-relaxed mb-8">
+          We provide in-home pet care services throughout the local area. Not sure if we cover your neighborhood? Reach out — we'd love to help.
+        </p>
+        <a
+          href="#contact"
+          class="inline-flex items-center bg-black hover:bg-violet-700 text-white font-semibold text-sm px-7 py-3.5 rounded-full transition-colors"
+        >
+          Check Your Area
+          <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Right neighborhood list -->
+      <div class="bg-violet-50 rounded-2xl p-8 border border-violet-100">
+        <h3 class="font-bold text-black mb-5 text-lg">Areas We Serve</h3>
+        <div class="grid grid-cols-2 gap-3">
+          {neighborhoods.map((n) => (
+            <div class="flex items-center gap-2.5 text-gray-700 text-sm">
+              <div class="w-1.5 h-1.5 bg-violet-500 rounded-full flex-shrink-0"></div>
+              {n}
+            </div>
+          ))}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
