@@ -26,8 +26,7 @@ const {
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <!-- Preload hero image — largest LCP element, above the fold -->
-    <link rel="preload" as="image" href="/images/hero.jpg" fetchpriority="high" />
+    <slot name="head" />
   </head>
   <body class="antialiased bg-white text-black">
     <slot />
