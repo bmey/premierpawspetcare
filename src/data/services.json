@@ -9,7 +9,7 @@
       {
         "name": "SubQ Fluids & Injection Administration",
         "description": "Skilled subcutaneous fluid therapy or injection administration for pets requiring ongoing at-home treatment.",
-        "iconId": "beaker"
+        "iconId": "syringe"
       },
       {
         "name": "Educational Visits",
@@ -17,8 +17,8 @@
         "iconId": "academic-cap"
       },
       {
-        "name": "Vet Visit Liaison",
-        "description": "We attend veterinary appointments on your behalf, advocate for your pet, take detailed notes, and relay everything clearly back to you.",
+        "name": "Veterinary Visit Support",
+        "description": "As licensed veterinary technicians, we attend appointments with you to help clarify medical information, reinforce your veterinary team's recommendations, and support your understanding of your pet's care plan.",
         "iconId": "clipboard"
       },
       {
@@ -48,7 +48,7 @@
       {
         "name": "Dog Walking (15 min)",
         "description": "A brisk, focused walk for exercise and a bathroom break. GPS tracked with a post-visit report sent to your phone.",
-        "iconId": "map-pin"
+        "iconId": "dog"
       },
       {
         "name": "Dog Field Trips",
@@ -92,12 +92,12 @@
       {
         "name": "Feed Visit",
         "description": "We stop by to fill food and water bowls, check on your pet's well-being, and send you a quick update.",
-        "iconId": "circle-stack"
+        "iconId": "paper-bag"
       },
       {
         "name": "Cat Visit",
         "description": "Complete feline care — fresh food, clean water, litter box service, and quality social time to keep your cat happy.",
-        "iconId": "heart"
+        "iconId": "cat"
       }
     ]
   }
