@@ -1,0 +1,65 @@
+---
+const pillars = [
+  {
+    title: "Insured & Bonded",
+    description: "Full liability insurance and bonding means you're protected. We take complete accountability for your home and pets.",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>`,
+  },
+  {
+    title: "Background Checked",
+    description: "Every team member passes a comprehensive background check. Your home and pets are always in trusted hands.",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>`,
+  },
+  {
+    title: "Locally Owned",
+    description: "We're not a franchise — we're your neighbors. A community-focused small business that genuinely cares about the people and pets we serve.",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>`,
+  },
+  {
+    title: "GPS Tracked Walks",
+    description: "Every walk is GPS-tracked with a shareable route map. You'll also receive photos and a report card after every visit.",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>`,
+  },
+];
+---
+
+<section id="why-us" class="bg-black py-20 lg:py-28">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+      <!-- Left text -->
+      <div>
+        <p class="text-violet-400 font-semibold text-sm uppercase tracking-widest mb-3">Why Choose Us</p>
+        <h2 class="text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.1] mb-6">
+          We treat your pets<br/>like <span class="text-violet-400">family.</span>
+        </h2>
+        <p class="text-white/60 text-lg leading-relaxed mb-8 max-w-md">
+          Premier Paws was founded by pet lovers, for pet lovers. We hold ourselves to the highest standards because your pet deserves nothing less.
+        </p>
+        <a
+          href="#contact"
+          class="inline-flex items-center bg-violet-600 hover:bg-violet-700 text-white font-semibold text-sm px-7 py-3.5 rounded-full transition-colors"
+        >
+          Get in Touch
+          <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Right pillars -->
+      <div class="grid sm:grid-cols-2 gap-5">
+        {pillars.map((pillar) => (
+          <div class="bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-6 transition-colors">
+            <div class="text-violet-400 mb-4">
+              <Fragment set:html={pillar.icon} />
+            </div>
+            <h3 class="font-bold text-white mb-2">{pillar.title}</h3>
+            <p class="text-white/50 text-sm leading-relaxed">{pillar.description}</p>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</section>

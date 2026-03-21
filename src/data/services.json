@@ -1,0 +1,38 @@
+[
+  {
+    "id": "dog-walking",
+    "title": "Dog Walking",
+    "description": "Daily walks tailored to your dog's energy and needs. Choose from 20, 30, or 60-minute options with real-time GPS tracking and a post-walk report sent to your phone.",
+    "icon": "walk"
+  },
+  {
+    "id": "pet-sitting",
+    "title": "Pet Sitting",
+    "description": "In-home pet sitting so your pet stays comfortable in their own environment. We provide feeding, fresh water, playtime, and plenty of love.",
+    "icon": "home"
+  },
+  {
+    "id": "puppy-care",
+    "title": "Puppy Care",
+    "description": "Specialized care for puppies including extra potty breaks, socialization, and positive reinforcement to support healthy development during the critical early months.",
+    "icon": "star"
+  },
+  {
+    "id": "overnight-stays",
+    "title": "Overnight Stays",
+    "description": "We stay in your home overnight so your pet never has to sleep alone. Perfect for vacations, business travel, or late nights out.",
+    "icon": "moon"
+  },
+  {
+    "id": "drop-in-visits",
+    "title": "Drop-In Visits",
+    "description": "Quick 20-minute check-ins to feed, refresh water, give potty breaks, and provide a little midday love and attention while you're away.",
+    "icon": "clock"
+  },
+  {
+    "id": "cat-care",
+    "title": "Cat Care",
+    "description": "Dedicated care for your feline friends. We scoop litter, refill food and water, and spend quality playtime keeping your cat happy and stimulated.",
+    "icon": "cat"
+  }
+]
