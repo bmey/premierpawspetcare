@@ -1,11 +1,22 @@
+---
+import { Picture } from 'astro:assets';
+import heroImg from '../assets/hero.jpg';
+---
+
 <section class="relative overflow-hidden min-h-[620px] lg:min-h-[700px] flex items-center">
 
-  <!-- Full-bleed background image, flipped horizontally -->
-  <img
-    src="/images/hero.jpg"
+  <!-- Full-bleed background image — optimized to AVIF/WebP at multiple sizes -->
+  <Picture
+    src={heroImg}
+    formats={['avif', 'webp']}
+    widths={[768, 1280, 1920]}
+    sizes="100vw"
+    quality={82}
     alt="A happy dog being cared for by Premier Paws Pet Care"
     class="absolute inset-0 w-full h-full object-cover"
     style="transform: scaleX(-1)"
+    loading="eager"
+    fetchpriority="high"
   />
 
   <!-- White gradient overlay — opaque on the left where text lives, fades to transparent -->
