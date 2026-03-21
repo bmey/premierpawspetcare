@@ -8,6 +8,7 @@ import WhyUs from '../components/WhyUs.astro';
 import HowItWorks from '../components/HowItWorks.astro';
 import Testimonials from '../components/Testimonials.astro';
 import ServiceArea from '../components/ServiceArea.astro';
+import Merch from '../components/Merch.astro';
 import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
 import heroImg from '../assets/hero.jpg';
@@ -27,6 +28,7 @@ const preloadHero = await getImage({ src: heroImg, format: 'avif', width: 1920, 
     <HowItWorks />
     <Testimonials />
     <ServiceArea />
+    <Merch />
     <Contact />
   </main>
   <Footer />
