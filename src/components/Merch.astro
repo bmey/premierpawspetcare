@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets';
+import merchImg from '../assets/merch.jpg';
+---
+
+<section id="merch" class="bg-white py-20 lg:py-28 overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+      <!-- Left: image -->
+      <div class="relative">
+        <div class="absolute -inset-4 bg-violet-100 rounded-3xl -rotate-2"></div>
+        <Image
+          src={merchImg}
+          alt="Premier Paws Pet Care merchandise"
+          width={800}
+          height={600}
+          quality={85}
+          class="relative rounded-2xl w-full object-cover shadow-xl"
+        />
+      </div>
+
+      <!-- Right: copy -->
+      <div>
+        <p class="text-violet-600 font-semibold text-sm uppercase tracking-widest mb-3">Official Merch</p>
+        <h2 class="text-4xl lg:text-5xl font-black text-black tracking-tight leading-[1.1] mb-6">
+          Wear your love<br/>for your <span class="text-violet-600">pets.</span>
+        </h2>
+        <p class="text-gray-500 text-lg leading-relaxed mb-4">
+          Show the world you're a proud pet parent. Our merch store features tees, hoodies, accessories, and more — all designed with the Premier Paws spirit in mind.
+        </p>
+        <p class="text-gray-500 text-lg leading-relaxed mb-8">
+          Every purchase helps support a small, local, pet-loving business. We appreciate you more than you know.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="https://shop.premierpawspetcare.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold text-sm px-8 py-4 rounded-full transition-colors shadow-lg shadow-violet-200"
+          >
+            Shop the Store
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"/>
+              <path d="M11 13l9 -9"/>
+              <path d="M15 4h5v5"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Trust note -->
+        <p class="mt-6 text-xs text-gray-400 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-violet-400 flex-shrink-0">
+            <path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06"/>
+            <path d="M15 19l2 2l4 -4"/>
+          </svg>
+          Fulfilled by Printify — print on demand, shipped directly to you.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
