@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import profileImg from '../assets/profile.jpg';
+
 const pillars = [
   {
     title: "Licensed & Insured",
@@ -25,6 +28,8 @@ const pillars = [
 
 <section id="why-us" class="bg-black py-20 lg:py-28">
   <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Why choose us -->
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
       <!-- Left text -->
@@ -61,5 +66,60 @@ const pillars = [
       </div>
 
     </div>
+
+    <!-- Meet our technicians -->
+    <div class="mt-20 pt-16 border-t border-white/10">
+      <div class="text-center mb-12">
+        <p class="text-violet-400 font-semibold text-sm uppercase tracking-widest mb-3">The Team</p>
+        <h3 class="text-3xl lg:text-4xl font-black text-white tracking-tight">
+          Meet Our Technicians
+        </h3>
+      </div>
+
+      <!-- Jessie -->
+      <div class="max-w-3xl mx-auto bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
+        <div class="grid sm:grid-cols-[200px_1fr]">
+
+          <!-- Photo -->
+          <div class="sm:h-full">
+            <Image
+              src={profileImg}
+              alt="Jessie — Licensed Veterinary Technician at Premier Paws Pet Care"
+              width={400}
+              height={500}
+              quality={85}
+              class="w-full h-56 sm:h-full object-cover object-top"
+            />
+          </div>
+
+          <!-- Bio -->
+          <div class="p-8">
+            <div class="mb-4">
+              <h4 class="text-2xl font-black text-white tracking-tight">Jessie</h4>
+              <div class="flex flex-wrap items-center gap-2 mt-2">
+                <span class="inline-flex items-center gap-1.5 bg-violet-600/20 text-violet-300 text-xs font-semibold px-3 py-1 rounded-full border border-violet-500/30">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+                  </svg>
+                  Licensed Vet Tech — DE &amp; PA
+                </span>
+                <span class="inline-flex items-center gap-1.5 bg-white/5 text-white/50 text-xs font-medium px-3 py-1 rounded-full border border-white/10">
+                  B.S. Animal Science, University of Delaware
+                </span>
+                <span class="inline-flex items-center gap-1.5 bg-white/5 text-white/50 text-xs font-medium px-3 py-1 rounded-full border border-white/10">
+                  A.S. Veterinary Technology, Harcum College
+                </span>
+              </div>
+            </div>
+
+            <p class="text-white/60 text-sm leading-relaxed">
+              I'm a licensed veterinary technician in Delaware and Pennsylvania, with a strong foundation in both science and hands-on care. My experience spans shelter medicine, emergency care, and general practice — giving me a well-rounded, real-world perspective on animal health. At the core of everything I do is a deep passion for supporting both pets and their people, and I'm proud to turn that passion into meaningful, everyday care.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
