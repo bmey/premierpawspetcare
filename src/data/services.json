@@ -68,7 +68,7 @@
       {
         "name": "Chicken Care Visit",
         "description": "Routine care for your flock including checking feed and water, collecting eggs, checking for environmental abnormalities, observing for signs of illness or injury.",
-        "iconId": "sparkles"
+        "iconId": "egg"
       },
       {
         "name": "Cage Cleaning",
