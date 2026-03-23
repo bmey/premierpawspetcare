@@ -1,5 +1,18 @@
 ---
+import { Image } from 'astro:assets';
 import testimonials from '../data/testimonials.json';
+
+import petEndeavor from '../assets/pet_endeavor.jpg';
+import petBinx from '../assets/pet_binx.jpg';
+import petJanice from '../assets/pet_janice.jpg';
+import petSully from '../assets/pet_sully.jpg';
+
+const petPhotos: Record<string, ImageMetadata> = {
+  endeavor: petEndeavor,
+  binx:     petBinx,
+  janice:   petJanice,
+  sully:    petSully,
+};
 ---
 
 <section id="testimonials" class="bg-violet-50 py-20 lg:py-28 overflow-hidden">
@@ -18,14 +31,26 @@ import testimonials from '../data/testimonials.json';
     </div>
   </div>
 
-  <!-- Full-bleed horizontal scroll container -->
-  <div class="overflow-x-auto scrollbar-hide pb-4">
+  <!-- Full-bleed horizontal scroll container — pt-8 and extra pl give room for bubble overhang -->
+  <div class="overflow-x-auto scrollbar-hide pt-8 pb-4">
     <div
-      class="flex gap-5 px-6"
-      style={`padding-left: max(1.5rem, calc((100vw - 72rem) / 2 + 1.5rem))`}
+      class="flex gap-5"
+      style={`padding-left: max(2.5rem, calc((100vw - 72rem) / 2 + 2.5rem)); padding-right: 1.5rem`}
     >
       {testimonials.map((t) => (
-        <article class="bg-white rounded-2xl p-7 shadow-sm border border-violet-100 w-80 flex-shrink-0 flex flex-col gap-4">
+        <article class="relative bg-white rounded-2xl px-7 pt-12 pb-7 shadow-sm border border-violet-100 w-80 flex-shrink-0 flex flex-col gap-4">
+          <!-- Pet photo bubble — centered on top-left corner -->
+          {petPhotos[t.photo] && (
+            <div class="absolute -top-8 left-6 w-16 h-16 rounded-full overflow-hidden ring-2 ring-white shadow-md z-10">
+              <Image
+                src={petPhotos[t.photo]}
+                alt={t.pet}
+                width={64}
+                height={64}
+                class="w-full h-full object-cover"
+              />
+            </div>
+          )}
           <!-- Quote -->
           <p class="text-gray-600 text-sm leading-relaxed flex-1">"{t.text}"</p>
           <!-- Author -->
