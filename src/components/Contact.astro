@@ -24,31 +24,6 @@ import site from '../data/site.json';
         />
 
         <div class="space-y-4">
-          <a
-            href={`tel:${site.phone}`}
-            class="flex items-center gap-3 text-white/70 hover:text-white transition-colors group"
-          >
-            <div class="w-10 h-10 rounded-full bg-white/10 group-hover:bg-violet-600 flex items-center justify-center flex-shrink-0 transition-colors">
-              <svg class="w-5 h-5 text-violet-400 group-hover:text-white transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-              </svg>
-            </div>
-            <span>{site.phone}</span>
-          </a>
-
-          <a
-            href={`mailto:${site.email}`}
-            class="flex items-center gap-3 text-white/70 hover:text-white transition-colors group"
-          >
-            <div class="w-10 h-10 rounded-full bg-white/10 group-hover:bg-violet-600 flex items-center justify-center flex-shrink-0 transition-colors">
-              <svg class="w-5 h-5 text-violet-400 group-hover:text-white transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
-                <path d="M3 7l9 6l9 -6" />
-              </svg>
-            </div>
-            <span>{site.email}</span>
-          </a>
-
           <div class="flex items-center gap-3 text-white/70">
             <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
               <svg class="w-5 h-5 text-violet-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
