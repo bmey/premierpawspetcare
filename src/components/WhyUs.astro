@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
-import profileImg from '../assets/profile.jpg';
+import profileJessieImg from '../assets/profile-jessie.jpg';
+import profileCourtneyImg from '../assets/profile-courtney.jpg';
 
 const pillars = [
   {
@@ -76,49 +77,99 @@ const pillars = [
         </h3>
       </div>
 
-      <!-- Jessie -->
-      <div class="max-w-3xl mx-auto bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
-        <div class="grid sm:grid-cols-[200px_1fr]">
+      <div class="space-y-6">
 
-          <!-- Photo -->
-          <div class="sm:h-full overflow-hidden">
-            <Image
-              src={profileImg}
-              alt="Jessie — Licensed Veterinary Technician at Premier Paws Pet Care"
-              width={400}
-              height={500}
-              quality={85}
-              class="w-full h-72 sm:h-full object-cover object-center"
-            />
-          </div>
+        <!-- Jessie -->
+        <div class="max-w-3xl mx-auto bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
+          <div class="grid sm:grid-cols-[200px_1fr]">
 
-          <!-- Bio -->
-          <div class="p-8">
-            <div class="mb-4">
-              <h4 class="text-2xl font-black text-white tracking-tight">Jessie</h4>
-              <div class="flex flex-wrap items-center gap-2 mt-2">
-                <span class="inline-flex items-center gap-1.5 bg-violet-600/20 text-violet-300 text-xs font-semibold px-3 py-1 rounded-full border border-violet-500/30">
-                  <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06"/>
-                    <path d="M15 19l2 2l4 -4"/>
-                  </svg>
-                  Licensed Vet Tech — DE &amp; PA
-                </span>
-                <span class="inline-flex items-center gap-1.5 bg-white/5 text-white/50 text-xs font-medium px-3 py-1 rounded-full border border-white/10">
-                  B.S. Animal Science, University of Delaware
-                </span>
-                <span class="inline-flex items-center gap-1.5 bg-white/5 text-white/50 text-xs font-medium px-3 py-1 rounded-full border border-white/10">
-                  A.S. Veterinary Technology, Harcum College
-                </span>
-              </div>
+            <!-- Photo -->
+            <div class="sm:h-full overflow-hidden">
+              <Image
+                src={profileJessieImg}
+                alt="Jessie — Licensed Veterinary Technician at Premier Paws Pet Care"
+                width={400}
+                height={500}
+                quality={85}
+                class="w-full h-72 sm:h-full object-cover object-center"
+              />
             </div>
 
-            <p class="text-white/60 text-sm leading-relaxed">
-              I'm a licensed veterinary technician in Delaware and Pennsylvania, with a strong foundation in both science and hands-on care. My experience spans shelter medicine, emergency care, and general practice — giving me a well-rounded, real-world perspective on animal health. At the core of everything I do is a deep passion for supporting both pets and their people, and I'm proud to turn that passion into meaningful, everyday care.
-            </p>
-          </div>
+            <!-- Bio -->
+            <div class="p-8">
+              <div class="mb-4">
+                <h4 class="text-2xl font-black text-white tracking-tight">Jessie</h4>
+                <div class="flex flex-wrap items-center gap-2 mt-2">
+                  <span class="inline-flex items-center gap-1.5 bg-violet-600/20 text-violet-300 text-xs font-semibold px-3 py-1 rounded-full border border-violet-500/30">
+                    <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06"/>
+                      <path d="M15 19l2 2l4 -4"/>
+                    </svg>
+                    Licensed Vet Tech — DE &amp; PA
+                  </span>
+                  <span class="inline-flex items-center gap-1.5 bg-white/5 text-white/50 text-xs font-medium px-3 py-1 rounded-full border border-white/10">
+                    B.S. Animal Science, University of Delaware
+                  </span>
+                  <span class="inline-flex items-center gap-1.5 bg-white/5 text-white/50 text-xs font-medium px-3 py-1 rounded-full border border-white/10">
+                    A.S. Veterinary Technology, Harcum College
+                  </span>
+                </div>
+              </div>
 
+              <p class="text-white/60 text-sm leading-relaxed">
+                A licensed veterinary technician with experience in emergency, shelter medicine, and general practice. Jessie has a special interest in behavior support, fear-free handling, desensitization training, rabbits, puppy foundations, and senior pet care, with a passion for helping anxious and complicated pets feel understood. She also enjoys client education and supporting families through the seasons of ownership — puppyhood, post-op recovery, and end-of-life care. When she's not working, you can find her with her family, hiking local state parks, volunteering in the community, and playing in her rock band.
+              </p>
+            </div>
+
+          </div>
         </div>
+
+        <!-- Courtney -->
+        <div class="max-w-3xl mx-auto bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
+          <div class="grid sm:grid-cols-[200px_1fr]">
+
+            <!-- Photo -->
+            <div class="sm:h-full overflow-hidden">
+              <Image
+                src={profileCourtneyImg}
+                alt="Courtney — Licensed Veterinary Technician at Premier Paws Pet Care"
+                width={400}
+                height={500}
+                quality={85}
+                class="w-full h-72 sm:h-full object-cover object-center"
+              />
+            </div>
+
+            <!-- Bio -->
+            <div class="p-8">
+              <div class="mb-4">
+                <h4 class="text-2xl font-black text-white tracking-tight">Courtney</h4>
+                <div class="flex flex-wrap items-center gap-2 mt-2">
+                  <span class="inline-flex items-center gap-1.5 bg-violet-600/20 text-violet-300 text-xs font-semibold px-3 py-1 rounded-full border border-violet-500/30">
+                    <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06"/>
+                      <path d="M15 19l2 2l4 -4"/>
+                    </svg>
+                    Licensed Vet Tech — DE
+                  </span>
+                  <span class="inline-flex items-center gap-1.5 bg-violet-600/20 text-violet-300 text-xs font-semibold px-3 py-1 rounded-full border border-violet-500/30">
+                    <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"/></svg>
+                    Fear-Free Certified
+                  </span>
+                  <span class="inline-flex items-center gap-1.5 bg-white/5 text-white/50 text-xs font-medium px-3 py-1 rounded-full border border-white/10">
+                    A.S. Veterinary Technology, Del Tech
+                  </span>
+                </div>
+              </div>
+
+              <p class="text-white/60 text-sm leading-relaxed">
+                A licensed veterinary technician who spent many years in general practice — especially enjoying assisting with surgeries and dentals — and who now works in urgent care. Courtney has a special interest in orthopedic and senior pain management. When she's not working, you can find her with her family, gardening, or headed to the beach.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
 

@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import site from '../data/site.json';
+import chamberLogo from '../assets/maccde-chamber.jpg';
 ---
 
 <footer class="bg-black border-t border-white/10">
@@ -62,6 +64,32 @@ import site from '../data/site.json';
         </div>
       </div>
 
+    </div>
+
+    <!-- Memberships -->
+    <div class="border-t border-white/10 pt-8 pb-2 mb-6 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+      <a
+        href="https://www.maccde.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Member of the Middletown Area Chamber of Commerce of Delaware"
+        class="inline-block bg-white rounded-xl px-4 py-2 hover:opacity-90 transition-opacity"
+      >
+        <Image
+          src={chamberLogo}
+          alt="Middletown Area Chamber of Commerce of Delaware"
+          width={240}
+          height={186}
+          quality={80}
+          loading="lazy"
+          decoding="async"
+          class="block h-12 w-auto"
+        />
+      </a>
+      <div class="flex flex-col items-center sm:items-start gap-2 my-auto">
+        <p class="text-white/60 text-xs uppercase tracking-widest">Proud Member</p>
+        <p class="text-white/40 text-xs">Middletown Area Chamber of Commerce of Delaware</p>
+      </div>
     </div>
 
     <!-- Bottom bar -->
