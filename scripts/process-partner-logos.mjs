@@ -47,6 +47,7 @@ const PARTNERS = [
   { id: 'delaware-pet-aquamation', name: 'Delaware Pet Aquamation',                input: 'partner_aquamation.jpg', bg: 'auto' },
   // low raised to clear the faint off-white sticker-border residue around the mark.
   { id: 'delaware-vet-dental',     name: 'Delaware Veterinary Dental Practice',    input: 'partner_DVDP.webp',      bg: [255, 255, 255], low: 0.55 },
+  { id: 'main-street-vet',         name: 'Main Street Veterinary Clinic',          input: 'partner_mainstreet.jpg', bg: 'auto' },
 ];
 
 const hexToRgb = (h) => { const n = parseInt(h.slice(1), 16); return [(n >> 16) & 255, (n >> 8) & 255, n & 255]; };

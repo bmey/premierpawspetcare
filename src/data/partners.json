@@ -12,6 +12,12 @@
     "logo": "/images/partners/cava.png"
   },
   {
+    "id": "main-street-vet",
+    "name": "Main Street Veterinary Clinic",
+    "url": "https://msvmiddletown.com/",
+    "logo": "/images/partners/main-street-vet.png"
+  },
+  {
     "id": "delaware-pet-aquamation",
     "name": "Delaware Pet Aquamation",
     "url": "https://delawarepetaquamation.com/",

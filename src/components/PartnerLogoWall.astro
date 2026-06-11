@@ -8,11 +8,12 @@ import partners from '../data/partners.json';
   Swap a placeholder: replace the file at the matching `logo` path in partners.json.
 -->
 <!--
-  Equal-width grid so each logo is centered in its own cell — the middle logo
-  lands on the page center line and the outer logos stay symmetric regardless
-  of their differing intrinsic widths. Add columns here if the partner count grows.
+  Equal-width grid so each logo is centered in its own cell, staying symmetric
+  regardless of the logos' differing intrinsic widths: a 2x2 block on mobile and
+  tablet, and a single 4-up row on desktop. Adjust the column counts here if the
+  partner count grows.
 -->
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-x-8 gap-y-12 items-center justify-items-center">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-x-0 lg:gap-x-8 gap-y-4 lg:gap-y-12 items-center justify-items-center">
   {partners.map((partner) => (
     <a
       href={partner.url}
@@ -26,7 +27,7 @@ import partners from '../data/partners.json';
         alt={partner.name}
         loading="lazy"
         decoding="async"
-        class="h-48 md:h-56 w-auto opacity-70 hover:opacity-100 transition duration-300"
+        class="h-32 sm:h-48 md:h-56 w-auto opacity-70 hover:opacity-100 transition duration-300"
       />
     </a>
   ))}
