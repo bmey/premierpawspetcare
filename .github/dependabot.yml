@@ -1,0 +1,31 @@
+# Dependabot keeps dependencies patched while the cooldown below holds back
+# brand-new (and potentially compromised) releases for 14 days.
+#
+# Note: the cooldown applies to routine *version* updates only. Dependabot
+# *security* updates (for published CVEs) intentionally bypass the cooldown so
+# known vulnerabilities still get patched immediately.
+version: 2
+updates:
+  # Application dependencies (astro, vite, tailwind, sharp, …)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 14
+    open-pull-requests-limit: 5
+    groups:
+      # Bundle routine bumps into one PR to cut review noise.
+      npm-dependencies:
+        patterns:
+          - "*"
+
+  # The GitHub Actions used by our deploy workflow are themselves a supply-chain
+  # surface — keep them updated (and cooled down) too.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 14
+    open-pull-requests-limit: 5

@@ -16,8 +16,32 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Install, build, and upload site
-        uses: withastro/action@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          cache: "npm"
+
+      # `npm ci` installs the EXACT tree recorded in package-lock.json
+      # (direct + transitive, verified against integrity hashes) and fails if
+      # package.json and the lockfile disagree. CI can never resolve a newer
+      # or stray version than what we committed and audited.
+      - name: Install from lockfile
+        run: npm ci
+
+      # Gate: block the deploy on any high/critical advisory affecting the
+      # exact versions we just installed.
+      - name: Audit dependencies (fail on high/critical)
+        run: npm audit --audit-level=high
+
+      - name: Build site
+        run: npm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
 
   deploy:
     needs: build
