@@ -1,0 +1,33 @@
+---
+import partners from '../data/partners.json';
+---
+
+<!--
+  Logo wall — monochrome marks on a transparent background, distributed across
+  the full container width and wrapping as the partner list grows.
+  Swap a placeholder: replace the file at the matching `logo` path in partners.json.
+-->
+<!--
+  Equal-width grid so each logo is centered in its own cell — the middle logo
+  lands on the page center line and the outer logos stay symmetric regardless
+  of their differing intrinsic widths. Add columns here if the partner count grows.
+-->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-x-8 gap-y-12 items-center justify-items-center">
+  {partners.map((partner) => (
+    <a
+      href={partner.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={partner.name}
+      class="block shrink-0"
+    >
+      <img
+        src={partner.logo}
+        alt={partner.name}
+        loading="lazy"
+        decoding="async"
+        class="h-48 md:h-56 w-auto opacity-70 hover:opacity-100 transition duration-300"
+      />
+    </a>
+  ))}
+</div>

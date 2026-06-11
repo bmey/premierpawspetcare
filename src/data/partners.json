@@ -1,0 +1,20 @@
+[
+  {
+    "id": "delaware-vet-dental",
+    "name": "Delaware Veterinary Dental Practice",
+    "url": "https://www.delvetdental.com/",
+    "logo": "/images/partners/delaware-vet-dental.png"
+  },
+  {
+    "id": "cava",
+    "name": "Companion Animal Veterinary Associates",
+    "url": "https://cavavet.com/",
+    "logo": "/images/partners/cava.png"
+  },
+  {
+    "id": "delaware-pet-aquamation",
+    "name": "Delaware Pet Aquamation",
+    "url": "https://delawarepetaquamation.com/",
+    "logo": "/images/partners/delaware-pet-aquamation.png"
+  }
+]

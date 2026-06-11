@@ -140,3 +140,5 @@ vite.config.ts.timestamp-*
 
 **/.DS_Store
 .astro
+# Temp output from scripts/process-partner-logos.mjs
+scripts/.preview/
